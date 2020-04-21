@@ -1,3 +1,5 @@
+#Utility for Feature Engineering
+
 from timeit import default_timer as timer
 import numpy as np
 import pandas as pd
@@ -174,4 +176,6 @@ def encodeCategoricalColumns(df):
     df["Category"] = outputClassEncoder.fit_transform(df["Category"])
 
     return df, encoderDictionary, outputClassEncoder
+	
+
 
